@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Journey | Healthca Medical</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical-blue': '#00234b',
+                        'light-blue': '#f3f7ff',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .medical-blue { color: #00234b; }
+        .bg-medical-blue { background-color: #00234b; }
+        
+        /* Smooth Timeline Line Logic */
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: #e5e7eb;
+            transform: translateX(-50%);
+        }
+        @media (max-width: 768px) {
+            .timeline-line::before { left: 20px; }
+        }
+    </style>
+</head>
+<body class="bg-white overflow-x-hidden">
+
+    <header class="relative bg-light-blue overflow-hidden">
+        <nav class="flex items-center justify-between px-8 py-6 md:px-20 absolute top-0 w-full z-50">
+            <a href="index.html" class="text-2xl font-bold medical-blue flex items-center hover:opacity-80 transition">
+                <span class="mr-2">✚</span> Healthca
+            </a>
+
+            <ul class="hidden md:flex space-x-10 font-medium">
+                <li><a href="index.html" class="medical-blue hover:text-blue-600">Home</a></li>
+                
+                <li class="relative group">
+                    <button class="flex items-center medical-blue group-hover:text-blue-600">
+                        Services <i class="fa-solid fa-chevron-down ml-2 text-xs transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <div class="absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-2 transition-all duration-300 z-50">
+                        <div class="py-2">
+                            <a href="#" class="block px-6 py-2 hover:bg-blue-50">Cardiology</a>
+                            <a href="#" class="block px-6 py-2 hover:bg-blue-50">Neurology</a>
+                            <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dental Health</a>
+                            <a href="#" class="block px-6 py-2 hover:bg-blue-50">Orthopedics</a>
+                            <a href="#" class="block px-6 py-2 hover:bg-blue-50">Pediatrics</a>
+                            <a href="#" class="block px-6 py-2 hover:bg-blue-50">Radiology</a>
+                            <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dermatology</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="relative group">
+                    <button class="flex items-center medical-blue group-hover:text-blue-600">
+                        Doctors <i class="fa-solid fa-chevron-down ml-2 text-xs transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <div class="absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-2 transition-all duration-300 z-50">
+                        <div class="py-2 text-sm">
+                            <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dr. Michael Scott (Cardio)</a>
+                            <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dr. Sarah Johnson (Neuro)</a>
+                            <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dr. James Wilson (Dental)</a>
+                            <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dr. Lisa Wong (Ortho)</a>
+                            <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dr. Robert Chen (Peds)</a>
+                            <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dr. Emily Davis (Radio)</a>
+                            <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dr. Mark Taylor (Derma)</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="about.html" class="text-blue-600 font-bold">About Us</a></li>
+                <li><a href="#" class="medical-blue hover:text-blue-600">Contact</a></li>
+            </ul>
+
+            <button class="bg-medical-blue text-white px-8 py-2.5 rounded-full hover:bg-blue-800 transition shadow-md">Login</button>
+        </nav>
+
+        <div class="pt-48 pb-32 container mx-auto px-8 md:px-20 relative z-10">
+            <div class="max-w-5xl">
+                <span class="text-blue-600 font-bold tracking-[0.2em] uppercase text-sm mb-6 block border-l-4 border-blue-600 pl-4">Our Heritage</span>
+                <h1 class="text-6xl md:text-8xl font-extrabold medical-blue leading-[0.9] mb-10 tracking-tighter">
+                    Since 1998, we've defined <br><span class="text-blue-600">medical excellence.</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-500 leading-relaxed max-w-2xl font-medium">
+                    Healthca started with a simple vision: to make world-class healthcare feel personal again.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-32 bg-white relative timeline-line overflow-hidden">
+        <div class="container mx-auto px-8 md:px-20">
+            
+            <div class="relative flex flex-col md:flex-row items-center justify-between mb-32 group">
+                <div class="md:w-5/12 text-right hidden md:block">
+                    <h3 class="text-7xl font-black text-gray-100 group-hover:text-blue-50 transition-colors">1998</h3>
+                </div>
+                <div class="w-12 h-12 bg-blue-600 rounded-full border-8 border-white shadow-xl z-10 relative"></div>
+                <div class="md:w-5/12 bg-gray-50 p-12 rounded-[50px] hover:shadow-2xl transition-all duration-500 border border-gray-100">
+                    <span class="text-blue-600 font-bold md:hidden text-2xl block mb-2">1998</span>
+                    <h4 class="text-3xl font-bold medical-blue mb-4">The Foundation</h4>
+                    <p class="text-gray-500 text-lg leading-relaxed">Dr. Michael Scott opened the doors to a small 3-room clinic in NY, focusing on community-first cardiology and heart health.</p>
+                </div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row-reverse items-center justify-between mb-32 group">
+                <div class="md:w-5/12 text-left hidden md:block">
+                    <h3 class="text-7xl font-black text-gray-100 group-hover:text-blue-50 transition-colors">2010</h3>
+                </div>
+                <div class="w-12 h-12 bg-blue-600 rounded-full border-8 border-white shadow-xl z-10"></div>
+                <div class="md:w-5/12 bg-gray-50 p-12 rounded-[50px] hover:shadow-2xl transition-all duration-500 border border-gray-100">
+                    <span class="text-blue-600 font-bold md:hidden text-2xl block mb-2">2010</span>
+                    <h4 class="text-3xl font-bold medical-blue mb-4">Major Expansion</h4>
+                    <p class="text-gray-500 text-lg leading-relaxed">We inaugurated our multi-specialty wing, bringing in world-class experts in Neurology and Pediatrics to serve more families.</p>
+                </div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row items-center justify-between group">
+                <div class="md:w-5/12 text-right hidden md:block">
+                    <h3 class="text-7xl font-black text-gray-100 group-hover:text-blue-50 transition-colors">2026</h3>
+                </div>
+                <div class="w-12 h-12 bg-green-500 rounded-full border-8 border-white shadow-xl z-10"></div>
+                <div class="md:w-5/12 bg-medical-blue p-12 rounded-[50px] shadow-2xl text-white transform hover:scale-105 transition-transform duration-500">
+                    <span class="text-blue-300 font-bold md:hidden text-2xl block mb-2">2026</span>
+                    <h4 class="text-3xl font-bold mb-4">Future of Health</h4>
+                    <p class="text-blue-100 text-lg leading-relaxed">The integration of AI diagnostics and robotic surgery assistants, marking our position as the region's most advanced private clinic.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="relative pt-24 pb-12 overflow-hidden bg-white">
+        <div class="absolute bottom-0 left-0 w-full pointer-events-none">
+            <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#f3f7ff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,122.7C672,96,768,96,864,117.3C960,139,1056,181,1152,192C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+
+        <div class="relative z-10 px-8 md:px-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-16 border-b border-gray-100">
+                <div class="space-y-6">
+                    <a href="index.html" class="text-3xl font-bold medical-blue flex items-center">
+                        <span class="mr-2">✚</span> Healthca
+                    </a>
+                    <p class="text-gray-500 leading-relaxed">
+                        Leading the way in medical excellence since 1998. We provide high-quality healthcare with a focus on modern technology and human compassion.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-all"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-all"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold medical-blue mb-6">Explore</h4>
+                    <ul class="space-y-4">
+                        <li><a href="about.html" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">About Us</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Meet Our Doctors</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Latest News</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Contact Support</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold medical-blue mb-6">Our Services</h4>
+                    <ul class="space-y-4 text-gray-500">
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Cardiology</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Neurology</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Dental Health</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Orthopedics</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Pediatrics</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Radiology</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Dermatology</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-xl font-bold medical-blue mb-6">Contact Us</h4>
+                    <div class="flex items-start gap-4">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-blue-600"></i>
+                        <p class="text-gray-500">123 Health Ave, Medical City, NY 10001, USA</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i data-lucide="phone" class="w-6 h-6 text-blue-600"></i>
+                        <p class="text-gray-500">+1 (800) 555-0199</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i data-lucide="mail" class="w-6 h-6 text-blue-600"></i>
+                        <p class="text-gray-500">support@healthca.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>© 2026 Healthca Medical Clinic. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-blue-600 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-blue-600 transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
