@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future of AI in Health | Healthca</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'medical-blue': '#00234b', 'light-blue': '#f3f7ff' },
+                }
+            }
+        }
+    </script>
+    <style>
+        .medical-blue { color: #00234b; }
+        .bg-medical-blue { background-color: #00234b; }
+        
+        /* Active State for Sidebar Bullets */
+        .nav-link.active { color: #2563eb; font-weight: 800; border-left-color: #2563eb; }
+        .nav-link.active .bullet { background-color: #2563eb; transform: scale(1.3); }
+        
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <nav class="flex items-center justify-between px-8 py-6 md:px-20 absolute top-0 w-full z-50">
+        <a href="index.html" class="text-2xl font-bold medical-blue flex items-center hover:opacity-80 transition">
+            <span class="mr-2">✚</span> Healthca
+        </a>
+
+        <ul class="hidden md:flex space-x-10 font-medium">
+            <li><a href="index.html" class="medical-blue hover:text-blue-600">Home</a></li>
+            
+            <li class="relative group">
+                <a href="services.html" class="flex items-center medical-blue group-hover:text-blue-600">
+                         Services 
+                     <i class="fa-solid fa-chevron-down ml-2 text-xs transition-transform group-hover:rotate-180"></i>
+                </a>
+                <div class="absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-2 transition-all duration-300 z-50">
+                    <div class="py-2">
+                        <a href="#" class="block px-6 py-2 hover:bg-blue-50">Cardiology</a>
+                        <a href="#" class="block px-6 py-2 hover:bg-blue-50">Neurology</a>
+                        <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dental Health</a>
+                        <a href="#" class="block px-6 py-2 hover:bg-blue-50">Orthopedics</a>
+                        <a href="#" class="block px-6 py-2 hover:bg-blue-50">Pediatrics</a>
+                        <a href="#" class="block px-6 py-2 hover:bg-blue-50">Radiology</a>
+                        <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dermatology</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="relative group">
+                <button class="flex items-center medical-blue group-hover:text-blue-600">
+                    Doctors <i class="fa-solid fa-chevron-down ml-2 text-xs transition-transform group-hover:rotate-180"></i>
+                </button>
+                <div class="absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-2 transition-all duration-300 z-50">
+                    <div class="py-2 text-sm">
+                        <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dr. Michael Scott (Cardio)</a>
+                        <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dr. Sarah Johnson (Neuro)</a>
+                        <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dr. James Wilson (Dental)</a>
+                        <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dr. Lisa Wong (Ortho)</a>
+                        <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dr. Robert Chen (Peds)</a>
+                        <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dr. Emily Davis (Radio)</a>
+                        <a href="#" class="block px-6 py-2 hover:bg-blue-50">Dr. Mark Taylor (Derma)</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="about.html" class="medical-blue hover:text-blue-600">About Us</a></li>
+            <li><a href="contact.html" class="medical-blue hover:text-blue-600">Contact</a></li>
+        </ul>
+
+        <button class="bg-medical-blue text-white px-8 py-2.5 rounded-full hover:bg-blue-800 transition shadow-md">Book An Appointment</button>
+    </nav>
+
+    <header class="py-16 px-8 md:px-20 bg-light-blue/30">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="bg-blue-100 text-blue-600 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">Medical Tech</span>
+            <h1 class="text-4xl md:text-6xl font-black medical-blue mt-6 mb-8 leading-tight">The Future of AI in Heart Surgery: What to Expect</h1>
+            <div class="flex items-center justify-center gap-6 text-gray-400">
+                <div class="flex items-center gap-2">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71f1e3c770?w=100" class="w-10 h-10 rounded-full object-cover border-2 border-white shadow-sm">
+                    <span class="font-bold medical-blue">Dr. Sarah Johnson</span>
+                </div>
+                <span>•</span>
+                <span>Jan 15, 2026</span>
+                <span>•</span>
+                <span>8 Min Read</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-8 md:px-20 py-20 flex flex-col lg:flex-row gap-16 relative">
+        
+        <aside class="lg:w-1/4">
+            <div class="sticky top-10 space-y-2 border-l-2 border-gray-100 ml-4">
+                <a href="#introduction" class="nav-link block pl-6 py-2 text-gray-400 hover:text-blue-600 transition-all relative group">
+                    <div class="bullet absolute left-[-7px] top-1/2 -translate-y-1/2 w-3 h-3 bg-gray-200 rounded-full transition-all"></div>
+                    Introduction
+                </a>
+                <a href="#predictive" class="nav-link block pl-6 py-2 text-gray-400 hover:text-blue-600 transition-all relative group">
+                    <div class="bullet absolute left-[-7px] top-1/2 -translate-y-1/2 w-3 h-3 bg-gray-200 rounded-full transition-all"></div>
+                    Predictive Analytics
+                </a>
+                <a href="#robotic" class="nav-link block pl-6 py-2 text-gray-400 hover:text-blue-600 transition-all relative group">
+                    <div class="bullet absolute left-[-7px] top-1/2 -translate-y-1/2 w-3 h-3 bg-gray-200 rounded-full transition-all"></div>
+                    Robotic Precision
+                </a>
+                <a href="#patient-care" class="nav-link block pl-6 py-2 text-gray-400 hover:text-blue-600 transition-all relative group">
+                    <div class="bullet absolute left-[-7px] top-1/2 -translate-y-1/2 w-3 h-3 bg-gray-200 rounded-full transition-all"></div>
+                    Post-Op Care
+                </a>
+                <a href="#conclusion" class="nav-link block pl-6 py-2 text-gray-400 hover:text-blue-600 transition-all relative group">
+                    <div class="bullet absolute left-[-7px] top-1/2 -translate-y-1/2 w-3 h-3 bg-gray-200 rounded-full transition-all"></div>
+                    Conclusion
+                </a>
+            </div>
+        </aside>
+
+        <article class="lg:w-3/4 prose prose-xl max-w-none text-gray-600 leading-relaxed">
+            
+            <section id="introduction" class="mb-20 scroll-mt-24">
+                <h2 class="text-3xl font-black medical-blue mb-6">Introduction</h2>
+                <p class="mb-6">Artificial Intelligence is no longer a concept of the far future. In the operating rooms of 2026, AI serves as the ultimate co-pilot for surgeons. By analyzing millions of data points in real-time, these systems provide insights that were previously impossible to calculate manually.</p>
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1000" class="rounded-[40px] w-full mb-8 shadow-lg">
+            </section>
+
+            <section id="predictive" class="mb-20 scroll-mt-24">
+                <h2 class="text-3xl font-black medical-blue mb-6">Predictive Analytics</h2>
+                <p>Before the first incision is even made, AI algorithms simulate the surgery based on the patient's specific anatomy. This allows doctors to predict potential complications and adjust their strategy, leading to a 30% reduction in surgical errors.</p>
+            </section>
+
+            <section id="robotic" class="mb-20 scroll-mt-24">
+                <h2 class="text-3xl font-black medical-blue mb-6">Robotic Precision</h2>
+                <p>Robotic-assisted surgery combines the intuition of a human surgeon with the sub-millimeter precision of a machine. This results in smaller incisions, less blood loss, and significantly faster recovery times for cardiac patients.</p>
+            </section>
+
+            <section id="patient-care" class="mb-20 scroll-mt-24">
+                <h2 class="text-3xl font-black medical-blue mb-6">Post-Op Care</h2>
+                <p>Post-operative monitoring has been transformed by wearable sensors that feed data directly back to the AI. If a patient’s heart rhythm shows even a slight anomaly, the medical team is alerted instantly—often before the patient even feels a symptom.</p>
+            </section>
+
+            <section id="conclusion" class="mb-20 scroll-mt-24 border-t pt-10">
+                <h2 class="text-3xl font-black medical-blue mb-6">Conclusion</h2>
+                <p>As we move deeper into 2026, the partnership between human expertise and machine intelligence will continue to redefine the boundaries of what is possible in healthcare.</p>
+            </section>
+
+        </article>
+    </main>
+
+    <footer class="relative pt-24 pb-12 overflow-hidden bg-white">
+    <div class="absolute bottom-0 left-0 w-full pointer-events-none">
+        <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#f3f7ff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,122.7C672,96,768,96,864,117.3C960,139,1056,181,1152,192C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </div>
+
+    <div class="relative z-10 px-8 md:px-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-16 border-b border-gray-100">
+            
+            <div class="space-y-6">
+                <a href="index.html" class="text-3xl font-bold medical-blue flex items-center">
+                    <span class="mr-2">✚</span> Healthca
+                </a>
+                <p class="text-gray-500 leading-relaxed">
+                    Leading the way in medical excellence since 1998. We provide high-quality healthcare with a focus on modern technology and human compassion.
+                </p>
+                
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-all"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-all"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+ 
+
+
+
+                <div class="relative select-none pointer-events-none py-2">
+                    <h2 class="text-6xl font-black leading-[0.85] tracking-tighter uppercase text-transparent"
+                        style="-webkit-text-stroke: 1px #00234b; 
+                               mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.3) 40%, black 100%);
+                               -webkit-mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.3) 40%, black 100%);">
+                        For You<br>By You
+                    </h2>
+                </div>
+
+                
+            </div>
+
+            <div>
+                <h4 class="text-xl font-bold medical-blue mb-6">Explore</h4>
+                <ul class="space-y-4">
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">About Us</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Meet Our Doctors</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Latest News</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Contact Support</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-xl font-bold medical-blue mb-6">Our Services</h4>
+                <ul class="space-y-4 text-gray-500">
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Cardiology</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Neurology</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Dental Health</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Orthopedics</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Pediatrics</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Radiology</a></li>
+                    <li><a href="#" class="text-gray-500 hover:text-blue-600 hover:translate-x-2 transition-all inline-block">Dermatology</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-6">
+                <h4 class="text-xl font-bold medical-blue mb-6">Contact Us</h4>
+                <div class="flex items-start gap-4">
+                    <i data-lucide="map-pin" class="w-6 h-6 text-blue-600"></i>
+                    <p class="text-gray-500">123 Health Ave, Medical City, NY 10001, USA</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <i data-lucide="phone" class="w-6 h-6 text-blue-600"></i>
+                    <p class="text-gray-500">+1 (800) 555-0199</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <i data-lucide="mail" class="w-6 h-6 text-blue-600"></i>
+                    <p class="text-gray-500">support@healthca.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+            <p>© 2026 Healthca Medical Clinic. All rights reserved.</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-blue-600 transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-blue-600 transition-colors">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
